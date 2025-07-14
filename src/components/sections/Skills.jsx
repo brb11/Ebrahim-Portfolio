@@ -112,6 +112,17 @@ const skills = [
   },
 ];
 
+// Add custom animation styles
+const fadeInUpStyle = `
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+`;
+
 const Skills = () => {
   // Function to convert skill level to percentage
   const getLevelPercentage = (level) => {
@@ -129,11 +140,12 @@ const Skills = () => {
 
   return (
     <section className="py-16 bg-transparent transition-colors duration-300">
+      <style>{fadeInUpStyle}</style>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2C3E50] dark:text-[#596d79] mb-16 relative">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((group, idx) => (
-            <div key={idx} className="bg-[#eaeaea] dark:bg-[#23272f] rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+            <div key={idx} className="bg-[#eaeaea] dark:bg-[#23272f] rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-700 animate-fadeInUp hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 transform" style={{animationDelay: `${idx * 0.12}s`}}>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">{group.category}</h3>
               <ul className="space-y-3">
                 {group.items.map((item, i) => (
@@ -144,12 +156,8 @@ const Skills = () => {
                     </div>
                     <div className="w-full h-2 bg-[#2C3E50]/5 dark:bg-[#2C3E50]/10 rounded-full overflow-hidden">
                       <div 
-                        className="h-full rounded-full transition-all duration-1000 ease-out
-                          bg-[#2C3E50] dark:bg-[#bdc3c7]"
-                        style={{ 
-                          width: getLevelPercentage(item.level),
-                          animation: 'slideIn 1s ease-out'
-                        }}
+                        className="h-full rounded-full transition-all duration-1000 ease-out bg-[#2C3E50] dark:bg-[#bdc3c7]"
+                        style={{ width: getLevelPercentage(item.level), animation: 'slideIn 1s ease-out' }}
                       />
                     </div>
                   </li>
