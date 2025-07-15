@@ -20,11 +20,10 @@ const Hero = () => {
           Ebrahim F. Basha
         </h1>
         <h3 className="text-lg md:text-2xl text-[#2C3E50] dark:text-[#bdc3c7] font-semibold mb-5 opacity-0 slide-up animation-delay-600">
-          Software Engineer
+          IT Engineer
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-7 max-w-md text-sm md:text-base leading-relaxed opacity-0 slide-up animation-delay-800">
-          Results-driven Software Engineer with strong experience in back-end development, database management, and DevOps. Skilled in Node.js, PHP, Django, Docker, and cloud infrastructure. Passionate about solving real-world problems, delivering high-quality solutions, and continuously learning new technologies.
-        </p>
+        Results-driven Software Engineer specializing in backend development and database administration. Skilled in Node.js, PHP, PostgreSQL, and Docker. I build scalable, high-performance systems, solve real-world problems, and always eager to learn new and emerging technologies.        </p>
 
         {/* الأزرار */}
         <div className="flex flex-col sm:flex-row gap-3 mb-5 w-full sm:w-auto opacity-0 slide-up animation-delay-1000 justify-center">
