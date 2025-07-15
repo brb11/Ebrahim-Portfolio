@@ -23,7 +23,9 @@ const Hero = () => {
           IT Engineer
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-7 max-w-md text-sm md:text-base leading-relaxed opacity-0 slide-up animation-delay-800">
-        Results-driven Software Engineer specializing in backend development and database administration. Skilled in Node.js, PHP, PostgreSQL, and Docker. I build scalable, high-performance systems, solve real-world problems, and always eager to learn new and emerging technologies.        </p>
+        Specialized in back-end development and database management.
+I have hands-on experience in building flexible, high-performance technical solutions using tools like Node.js, PHP, PostgreSQL, Docker, and K8s.
+I constantly strive to explore and apply the latest technologies to achieve tangible results and drive continuous improvement and innovation.        </p>
 
         {/* الأزرار */}
         <div className="flex flex-col sm:flex-row gap-3 mb-5 w-full sm:w-auto opacity-0 slide-up animation-delay-1000 justify-center">
