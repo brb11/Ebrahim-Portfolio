@@ -37,6 +37,13 @@ I constantly strive to explore and apply the latest technologies to achieve tang
             Download CV
           </a>
           <a
+            href="/Ebrahim_Basha_CV_ATS.pdf"
+            download
+            className="px-8 py-3 rounded-full bg-[#34495E] text-white font-bold shadow-lg hover:bg-[#2C3E50] transition-all duration-300 hover:scale-105 text-sm md:text-base text-center"
+          >
+            Download CV - ATS format
+          </a>
+          <a
             href="#about"
             className="px-8 py-3 rounded-full border-2 border-[#2C3E50] text-[#2C3E50] dark:text-[#bdc3c7] font-bold hover:bg-[#2C3E50] hover:text-white transition-all duration-300 hover:scale-105 text-sm md:text-base text-center"
           >
