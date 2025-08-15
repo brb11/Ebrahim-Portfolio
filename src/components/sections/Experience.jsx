@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     title: 'Back-End Developer',
-    company: 'TemmamlIght Co.',
+    company: 'TemmamLight Co.',
     location: "Sana'a, Yemen",
     date: 'Jan – Mar 2024',
   },

@@ -6,7 +6,7 @@ const skills = [
     items: [
       { name: 'Node.js (Express)', level: 'Advanced' },
       { name: 'PHP', level: 'Advanced' },
-      { name: 'Django', level: 'Intermediate' },
+      { name: 'Python', level: 'Intermediate' },
       { name: 'Laravel', level: 'Intermediate' },
       { name: 'Odoo Development (current interest)', level: 'Intermediate' },
       { name: 'pocketbase', level: 'Intermediate' },

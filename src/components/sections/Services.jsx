@@ -3,7 +3,7 @@ import React from 'react';
 const services = [
   {
     title: 'Back-End Development',
-    description: 'Design and implement robust, scalable server-side applications using Node.js (Express), PHP, Django, and Laravel. Develop secure RESTful APIs and integrate authentication systems (JWT, OAuth 2.0).',
+    description: 'Design and implement robust, scalable server-side applications using Node.js (Express), PHP, Python, and Laravel. Develop secure RESTful APIs and integrate authentication systems (JWT, OAuth 2.0).',
     icon: (
       <svg className="w-10 h-10 text-[#2C3E50] mb-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
