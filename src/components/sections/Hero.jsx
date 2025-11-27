@@ -20,7 +20,7 @@ const Hero = () => {
           Ebrahim F. Basha
         </h1>
         <h3 className="text-lg md:text-2xl text-[#2C3E50] dark:text-[#bdc3c7] font-semibold mb-5 opacity-0 slide-up animation-delay-600">
-          IT Engineer
+          Software Engineer
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-7 max-w-md text-sm md:text-base leading-relaxed opacity-0 slide-up animation-delay-800">
         Specialized in back-end development and database management, with current interest on Odoo development.
