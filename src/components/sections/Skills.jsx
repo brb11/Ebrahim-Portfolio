@@ -4,11 +4,11 @@ const skills = [
   {
     category: 'Back-End',
     items: [
+      { name: 'ERPs: Odoo ERP', level: 'Advanced' },
       { name: 'Node.js (Express)', level: 'Advanced' },
       { name: 'PHP', level: 'Advanced' },
       { name: 'Python', level: 'Intermediate' },
       { name: 'Laravel', level: 'Intermediate' },
-      { name: 'Odoo Development (current interest)', level: 'Intermediate' },
       { name: 'pocketbase', level: 'Intermediate' },
       { name: 'ORMs: Sequelize', level: 'Advanced' },
       { name: 'ORMs: Prisma', level: 'Intermediate' },

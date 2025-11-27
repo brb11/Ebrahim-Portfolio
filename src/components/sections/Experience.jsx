@@ -3,6 +3,12 @@ import { BriefcaseIcon } from '@heroicons/react/24/solid';
 
 const experiences = [
   {
+    title: 'Software Engineer (Odoo ERP)',
+    company: 'New Vision Co.',
+    location: "Riyadh, Saudi Arabia ",
+    date: 'Oct 2025 – Present',
+  },
+  {
     title: 'DBA & Back-End Developer',
     company: 'SOFA Co.',
     location: "Sana'a, Yemen",
@@ -24,7 +30,7 @@ const experiences = [
     title: 'Graphic Designer',
     company: 'Freelance Work',
     location: '',
-    date: 'Sept 2023 – Present',
+    date: 'Sept 2023 – 2025',
   },
   {
     title: 'Professional Projects',
