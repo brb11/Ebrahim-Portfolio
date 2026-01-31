@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTools, FaDatabase, FaCloud, FaCode, FaCogs, FaPalette, FaClipboardList } from 'react-icons/fa';
+import { FaTools, FaDatabase, FaCloud, FaCode, FaCogs, FaPalette, FaClipboardList, FaCodeBranch } from 'react-icons/fa';
 
 const tools = [
   {
@@ -32,6 +32,14 @@ const tools = [
     items: [
       'Postman',
       'Thunder Client',
+    ],
+  },
+  {
+    category: 'Version Control',
+    icon: <FaCodeBranch className="text-2xl text-[#2C3E50] dark:text-[#bdc3c7] mr-2" />,
+    items: [
+      'Git',
+      'GitHub',
     ],
   },
   {
