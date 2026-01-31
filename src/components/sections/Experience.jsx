@@ -7,54 +7,100 @@ const experiences = [
     company: 'New Vision Co.',
     location: "Riyadh, Saudi Arabia ",
     date: 'Oct 2025 – Present',
+    description: [
+      'Developed and customized Odoo ERP modules to support business workflows and operational requirements.',
+      'Analyzed organizational needs and implemented scalable ERP solutions using Python and Odoo framework.',
+      'Managed system security by configuring user roles, access rights, and record rules.',
+      'Supported deployment, maintenance, and end-user technical support to ensure stable daily operations.',
+    ],
   },
   {
     title: 'DBA & Back-End Developer',
     company: 'SOFA Co.',
     location: "Sana'a, Yemen",
     date: 'Jul 2024 – 2025',
+    description: [
+      'Managed and maintained enterprise databases including PostgreSQL, MongoDB, MinIO, and Elasticsearch to ensure reliability, scalability, and high performance.',
+      'Developed backend services and secure RESTful APIs to support internal business applications and system integrations.',
+      'Automated backup, recovery, and monitoring workflows using shell scripting, cron jobs.',
+      'Implemented high availability solutions and optimized database performance through clustering, indexing, and query tuning.',
+      'Designed and generated business and operational reports using Telerik Reporting to support data-driven decision-making.',
+      'Provided ongoing technical support and troubleshooting for production backend systems and database operations.',
+    ],
   },
   {
     title: 'Back-End Developer',
     company: 'TemmamLight Co.',
     location: "Sana'a, Yemen",
     date: 'Jan – Mar 2024',
+    description: [
+      'Completed hands-on backend development training using Laravel framework and PHP within a professional company environment.',
+      'Built and tested RESTful APIs and backend components as part of real-world development tasks.',
+      'Worked with MySQL databases for data modeling, CRUD operations, and query handling.',
+      'Collaborated with the technical team to improve coding practices, debugging skills, and project workflow understanding.',
+    ],
   },
   {
     title: 'UX/UI Designer',
     company: 'Devstation Co.',
     location: "Sana'a, Yemen",
     date: 'Aug – Nov 2022',
+    description: [
+      'Designed UI/UX layouts and prototypes for web and mobile applications using Adobe XD.',
+      'Improved user experience through research, feedback, and usability-focused design decisions.',
+      'Worked closely with development teams to deliver consistent and functional interfaces.',
+    ],
   },
   {
     title: 'Graphic Designer',
     company: 'Freelance Work',
     location: '',
     date: 'Sept 2023 – 2025',
+    description: [
+      'Created logos, branding materials, and social media designs for freelance clients.',
+      'Produced high-quality visuals using Adobe Photoshop and Illustrator with timely delivery.',
+      'Managed client requirements, feedback cycles, and project completion.',
+    ],
   },
   {
     title: 'Professional Projects',
     company: "Sana'a University",
     location: "Sana'a, Yemen",
     date: 'Sept 2021 – 2025',
+    description: [
+      'Developed multiple academic and real-world software projects as part of the Information Technology program.',
+    ],
   },
   {
     title: 'Peer Educator & Youth Trainer',
     company: 'Youth Leadership Program & UNICEF',
     location: 'Ibb, Yemen',
     date: 'Feb 2019',
+    description: [
+      'Delivered youth training sessions focused on leadership, communication, and community development.',
+      'Supported educational workshops and awareness activities in collaboration with UNICEF programs.',
+    ],
   },
   {
     title: 'Community Awareness Facilitator',
     company: 'Arab Human Rights Foundation',
     location: 'Ibb, Yemen',
     date: 'Feb – Mar 2019',
+    description: [
+      'Conducted community awareness campaigns on human rights and social responsibility topics.',
+      'Engaged with local communities through presentations, outreach, and educational sessions.',
+      'Assisted in reporting and supporting program implementation activities.',
+    ],
   },
   {
     title: 'Peer Educator',
     company: 'UNICEF',
     location: 'Ibb, Yemen',
     date: 'May – Aug 2018',
+    description: [
+      'Participated in youth education and awareness initiatives organized by UNICEF.',
+      'Supported team coordination and engagement activities in schools and community centers.',
+    ],
   },
 ];
 
@@ -96,7 +142,17 @@ const Experience = () => {
                   {exp.company}
                   {exp.location && <span className="text-xs sm:text-sm font-normal text-gray-500 dark:text-gray-400"> &nbsp;| {exp.location}</span>}
                 </div>
-                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1">{exp.date}</div>
+                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1 mb-3">{exp.date}</div>
+                {exp.description && exp.description.length > 0 && (
+                  <ul className="mt-3 space-y-2 list-none pl-0">
+                    {exp.description.map((item, itemIdx) => (
+                      <li key={itemIdx} className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 flex items-start">
+                        <span className="text-[#2C3E50] dark:text-[#bdc3c7] mr-2 flex-shrink-0 w-3 text-center">•</span>
+                        <span className="text-justify flex-1">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
